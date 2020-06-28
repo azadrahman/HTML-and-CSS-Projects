@@ -1,0 +1,50 @@
+body{
+	background: #252525;
+}
+h1{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 40px;
+	color: #fff;
+	font-family: sans-serif;
+	text-shadow: 6px 4px 5px rgba(67,189,211,0.5);
+
+} 
+.gallery{
+	height: 80%;
+	width: 100%;
+	display: flex;
+	margin: 5% auto 0;
+	box-sizing: border-box;
+}
+.image-box{
+	margin:0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+.image-box img{
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: .5s;
+}
+.image-box:hover{
+	flex-basis: 50%;
+}
+.active{
+	flex-basis: 50%;
+}
+.gallery:hover .active{
+  flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+	flex-basis: 50%;
+}
+marquee{
+	padding: 30px;
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 6px 4px 4px black;
+}
